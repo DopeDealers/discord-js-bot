@@ -1,2 +1,1 @@
-# discord-js-bot
-OpenSourced Discord.js bot
+# Discord.js-Bot

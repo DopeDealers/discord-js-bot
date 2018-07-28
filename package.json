@@ -1,0 +1,15 @@
+{
+  "name": "Discord-js-bot",
+  "author": "Phil#0004",
+  "main": "main.js",
+  "version": "1.0.0-beta-5",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "enmap": "^2.6.3",
+    "fs": "0.0.1-security"
+  },
+  "scripts": {
+    "bot": "node main.js -pm2 --throw-deprecation --title=Bot!!!",
+    "shard": "node sharding-main.js -pm2 --throw-deprecation --title=Bot!!!"
+  }
+}
