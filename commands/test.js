@@ -1,7 +1,10 @@
 exports.run = (client, message, args) => {
 
-    message.reply("pug");
+ if(args == "dm-me")
+  message.author.send('👌')
+ .catch(() => message.reply("I cant send a dm to you! please fix that. now."));
 
-    console.log(Math.random(1 * 46578890));
-
+ else {
+   message.channel.send("haha no i only wana slide in your DMs");
+ }
 };
