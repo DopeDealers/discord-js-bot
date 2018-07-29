@@ -6,10 +6,13 @@
   "dependencies": {
     "discord.js": "^11.3.2",
     "enmap": "^2.6.3",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "pause": "^0.1.0"
   },
   "scripts": {
     "bot": "node main.js -pm2 --throw-deprecation --title=Bot!!!",
-    "shard": "node sharding-main.js -pm2 --throw-deprecation --title=Bot!!!"
+    "shard": "node sharding-main.js -pm2 --throw-deprecation --title=Bot!!!",
+    "discord": "start npm i --save discord.js pause",
+    "update": "start npm i --save discord.js && start npm i --save enmap && start npm i --save fs"
   }
 }

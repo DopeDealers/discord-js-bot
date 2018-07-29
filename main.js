@@ -31,7 +31,13 @@ fs.readdir("./commands/", (err, files) => {
         if (!file.endsWith(".js")) return;
         let props = require(`./commands/${file}`);
         let commandName = file.split(".")[0];
-        console.log(`Attempting to load command ${commandName}`);
+        console.log(" ");
+        console.log(" ===================================");
+        console.log(" ");
+        console.log(` Attempting to load command ${commandName}`);
+        console.log(" ");
+        console.log(" ===================================");
+        console.log(" ");
         client.commands.set(commandName, props);
     });
 });
