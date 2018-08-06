@@ -1,4 +1,8 @@
 {
+  // remove this or when using it it wont work
+  // Im keeping the token as this bot was specifically 
+  // made for this reason. for users to test. you can change if you want
+  // but idrc.
   "token": "NDYzMjAwNzkzNTE2ODM0ODE2.Dj450Q.HvtDCjdvSgbjmAjfE61thQhbKtA",
   "prefix": "=",
   "shard": {
