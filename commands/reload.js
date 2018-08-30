@@ -2,7 +2,7 @@ const owners = require("./settings.json");
 
 exports.run = (client, message, args) => {
 
-    if (message.author.id == owners.botowner) {
+    if (message.author.id != owners.botowner) return message.reply('Only bot owners may run this command!');
         if (!args || args.size < 1) return message.reply("Must provide a command name to reload.");
         const commandName = args[0];
         if (!client.commands.has(commandName)) {
@@ -13,7 +13,4 @@ exports.run = (client, message, args) => {
         const props = require(`./${commandName}.js`);
         client.commands.set(commandName, props);
         message.reply(`The command \`${commandName}\` has been reloaded`);
-    } else if (message.author.id !== owners.botowners) {
-        message.reply("You are not a bot owner!");
-    }
 };
